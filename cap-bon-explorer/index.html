@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil - Cap Bon Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
+          <img src="images/logo.svg" alt="Logo Cap Bon Explorer" width="36" height="36">
+          <span>Cap Bon Explorer</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Afficher la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="activites.html">Activités</a></li>
+            <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link" href="reservation.html">Réservation</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact / FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bannière principale -->
+    <section class="banniere-hero py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <span class="badge text-bg-primary mb-2">Tourisme &amp; Découverte • Tunisie</span>
+            <h1 id="titre-banniere" class="display-5 fw-bold mb-3">Explorez les trésors authentiques du Cap Bon</h1>
+            <p class="lead text-secondary mb-4">
+              Cap Bon Explorer vous invite à découvrir le patrimoine, les savoir-faire et les paysages du Cap Bon.
+              Parcourez nos expériences, choisissez une activité et préparez votre visite grâce à une simulation de réservation simple et transparente.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="activites.html" class="btn btn-capbon btn-lg">Découvrir les activités</a>
+              <a href="reservation.html" class="btn btn-outline-primary btn-lg">Simuler une réservation</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="images/banniere.svg" class="img-fluid rounded-4 shadow" alt="Illustration panoramique du Cap Bon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qui sommes-nous ? -->
+    <section class="container py-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="fw-bold mb-3">Qui sommes-nous ?</h2>
+          <p>
+            Cap Bon Explorer est une initiative touristique locale dédiée à la valorisation culturelle et naturelle de la péninsule du Cap Bon. Notre équipe conçoit des expériences authentiques à Nabeul, Hammamet, Kélibia et Kerkouane afin de faire découvrir les traditions vivantes, les ateliers d'artisans et les paysages préservés de la région.
+          </p>
+          <p class="mb-0">
+            À travers ce portail interactif, chaque visiteur peut consulter librement notre catalogue d'activités, vérifier les prochaines dates programmées et estimer en quelques clics le budget de sa sortie en famille ou entre amis, en toute simplicité et transparence.
+          </p>
+        </div>
+        <aside class="col-lg-5">
+          <div class="p-4 bg-white rounded-3 border shadow-sm">
+            <h3 class="h5 fw-bold text-primary mb-3">Pourquoi découvrir le Cap Bon ?</h3>
+            <ul class="mb-0">
+              <li class="mb-2"><strong>Un artisanat vivant :</strong> poterie, céramique et marchés traditionnels de Nabeul.</li>
+              <li class="mb-2"><strong>Un patrimoine millénaire :</strong> la cité punique de Kerkouane et les médinas côtières.</li>
+              <li class="mb-2"><strong>Des paysages variés :</strong> entre plages de Kélibia et sentiers du Djebel Abderrahmane.</li>
+              <li><strong>Des tarifs accessibles :</strong> activités encadrées avec remise automatique dès 4 participants.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Activités mises en avant -->
+    <section class="container pb-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0">Expériences à la une</h2>
+        <a href="activites.html" class="btn btn-outline-primary btn-sm">Voir les 8 activités</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 shadow-sm carte-activite">
+            <img src="images/a01.svg" class="card-img-top" alt="Découverte de la médina de Nabeul">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-categorie align-self-start mb-2">Culture</span>
+              <h3 class="card-title h5">Découverte de la médina - Nabeul</h3>
+              <p class="fw-bold text-primary mt-auto">20 TND</p>
+              <a href="activites.html" class="btn btn-capbon btn-sm">Consulter</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 shadow-sm carte-activite">
+            <img src="images/a02.svg" class="card-img-top" alt="Atelier d'initiation à la poterie">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-categorie align-self-start mb-2">Artisanat</span>
+              <h3 class="card-title h5">Atelier d'initiation à la poterie - Nabeul</h3>
+              <p class="fw-bold text-primary mt-auto">35 TND</p>
+              <a href="activites.html" class="btn btn-capbon btn-sm">Consulter</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 shadow-sm carte-activite">
+            <img src="images/a05.svg" class="card-img-top" alt="Circuit du littoral à Kélibia">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-categorie align-self-start mb-2">Nature</span>
+              <h3 class="card-title h5">Circuit du littoral - Kélibia</h3>
+              <p class="fw-bold text-primary mt-auto">40 TND</p>
+              <a href="activites.html" class="btn btn-capbon btn-sm">Consulter</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 shadow-sm carte-activite">
+            <img src="images/a08.svg" class="card-img-top" alt="Promenade photographique à Hammamet">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-categorie align-self-start mb-2">Découverte</span>
+              <h3 class="card-title h5">Promenade photographique - Hammamet</h3>
+              <p class="fw-bold text-primary mt-auto">30 TND</p>
+              <a href="activites.html" class="btn btn-capbon btn-sm">Consulter</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Appel à l'action -->
+      <div class="p-4 p-md-5 mt-5 bg-primary text-white rounded-4 text-center shadow-sm">
+        <h2 class="fw-bold mb-2">Prêt à préparer votre prochaine sortie ?</h2>
+        <p class="mb-3">Estimez gratuitement le coût de votre activité et profitez d'une remise de 10 % pour les groupes de 4 personnes ou plus.</p>
+        <a href="reservation.html" class="btn btn-light btn-lg fw-bold text-primary">Simuler une réservation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied-page py-4 mt-5">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-1 fw-bold">Cap Bon Explorer — Portail touristique pédagogique</p>
+          <p class="mb-0 small text-light-emphasis">Site de démonstration sans paiement ni réservation réelle.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-1">
+            <li class="list-inline-item"><a href="index.html">Retour à l'accueil</a></li>
+            <li class="list-inline-item">•</li>
+            <li class="list-inline-item"><a href="activites.html">Activités</a></li>
+            <li class="list-inline-item">•</li>
+            <li class="list-inline-item"><a href="agenda.html">Agenda</a></li>
+            <li class="list-inline-item">•</li>
+            <li class="list-inline-item"><a href="reservation.html">Réservation</a></li>
+            <li class="list-inline-item">•</li>
+            <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

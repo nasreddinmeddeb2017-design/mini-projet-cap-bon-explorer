@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="680" cy="90" r="120" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="110" cy="420" r="150" fill="rgba(255,255,255,0.08)"/>
+  <g transform="translate(340, 110) scale(1.5)"><polygon points="10,32 70,32 64,16 16,16" fill="#fde047"/><rect x="16" y="32" width="48" height="36" fill="#fff"/></g>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">Marché Local de Nabeul</text>
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="22" fill="#f1f5f9" text-anchor="middle">Découverte • 1 h 30 • 15 TND</text>
+</svg>

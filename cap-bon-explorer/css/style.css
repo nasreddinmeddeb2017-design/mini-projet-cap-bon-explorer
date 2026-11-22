@@ -1,0 +1,113 @@
+/* Feuille de style personnalisée - Cap Bon Explorer */
+/* Chargée après Bootstrap 5 pour personnaliser l'identité visuelle */
+
+:root {
+  --couleur-principale: #0b5ed7;
+  --couleur-accent: #e67e22;
+  --couleur-fond-doux: #f4f7fb;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--couleur-fond-doux);
+  color: #212529;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* En-tête et navigation */
+.navbar-brand {
+  letter-spacing: 0.3px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: var(--couleur-principale) !important;
+  border-bottom: 2px solid var(--couleur-principale);
+}
+
+/* Bannière principale (Hero) */
+.banniere-hero {
+  background: linear-gradient(135deg, #e8f1ff 0%, #ffffff 100%);
+  border-bottom: 1px solid #dee2e6;
+}
+
+#titre-banniere {
+  color: #0a3678;
+}
+
+/* Cartes d'activités personnalisées */
+.carte-activite {
+  border: 1px solid #dce4ef;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte-activite:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(11, 94, 215, 0.14) !important;
+}
+
+.carte-activite .card-img-top {
+  height: 185px;
+  object-fit: cover;
+}
+
+.badge-categorie {
+  background-color: var(--couleur-accent);
+  color: #ffffff;
+}
+
+/* Boutons personnalisés */
+.btn-capbon {
+  background-color: var(--couleur-principale);
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-capbon:hover,
+.btn-capbon:focus {
+  background-color: #094bb0;
+  color: #ffffff;
+}
+
+/* Encadré récapitulatif réservation */
+.boite-calcul {
+  background-color: #ffffff;
+  border-left: 5px solid var(--couleur-principale);
+  border-radius: 8px;
+}
+
+/* Pied de page */
+footer.pied-page {
+  background-color: #162436;
+  color: #e9ecef;
+}
+
+footer.pied-page a {
+  color: #9ec5fe;
+  text-decoration: none;
+}
+
+footer.pied-page a:hover {
+  text-decoration: underline;
+}
+
+/* Adaptation mobile */
+@media (max-width: 576px) {
+  .carte-activite .card-img-top {
+    height: 160px;
+  }
+  .nav-link.active {
+    border-bottom: none;
+    padding-left: 8px;
+    border-left: 3px solid var(--couleur-principale);
+  }
+}
